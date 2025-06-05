@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Contactos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="app">
+    <h1>Gestor de Contactos</h1>
+    <form id="contactForm">
+      <div class="input-group">
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+        <input type="email" id="correo" placeholder="Correo electrónico" required>
+        <input type="tel" id="telefono" placeholder="Número de teléfono" required>
+      </div>
+      <div class="buttons">
+        <button type="submit" id="guardar">Guardar</button>
+        <button type="button" onclick="limpiarFormulario()">Limpiar</button>
+      </div>
+    </form>
+    <p id="mensaje" class="mensaje"></p>
+    <h2>Lista de Contactos</h2>
+    <div id="contactos" class="contactos"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
